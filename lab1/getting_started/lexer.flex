@@ -7,6 +7,7 @@ int lexical_errors = 0;
 %option yylineno noyywrap nounput batch noinput stack 
 %%
 
+"//"                        {return yy::parser::make_COMMENT(yytext);}
 "class"                     {return yy::parser::make_CLASS(yytext);}
 "static"                    {return yy::parser::make_STATIC(yytext);}
 "void"                      {return yy::parser::make_VOID(yytext);}

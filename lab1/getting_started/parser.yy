@@ -19,7 +19,7 @@
 }
 // definition of set of tokens. All tokens are of type string
 %token <std::string> PLUSOP MINUSOP MULTOP DIVOP INT LP RP LHB RHB LCB RCB ASSIGN EQ AND OR GT LT
-%token <std::string> CLASS STATIC VOID MAIN PUBLIC
+%token <std::string> CLASS STATIC VOID MAIN PUBLIC COMMENT
 %token <std::string> PERIOD COMMA EXCLAMATION SEMICOLON INTTYPE BOOLTYPE STRING
 %token <std::string> IF ELSE WHILE NEW LENGTH PRINT IDENTIFIER
 %token END 0 "end of file"
