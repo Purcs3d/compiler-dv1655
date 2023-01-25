@@ -201,9 +201,39 @@ namespace yy {
       case symbol_kind::S_PLUSOP: // PLUSOP
       case symbol_kind::S_MINUSOP: // MINUSOP
       case symbol_kind::S_MULTOP: // MULTOP
+      case symbol_kind::S_DIVOP: // DIVOP
       case symbol_kind::S_INT: // INT
       case symbol_kind::S_LP: // LP
       case symbol_kind::S_RP: // RP
+      case symbol_kind::S_LHB: // LHB
+      case symbol_kind::S_RHB: // RHB
+      case symbol_kind::S_LCB: // LCB
+      case symbol_kind::S_RCB: // RCB
+      case symbol_kind::S_ASSIGN: // ASSIGN
+      case symbol_kind::S_EQ: // EQ
+      case symbol_kind::S_AND: // AND
+      case symbol_kind::S_OR: // OR
+      case symbol_kind::S_GT: // GT
+      case symbol_kind::S_LT: // LT
+      case symbol_kind::S_CLASS: // CLASS
+      case symbol_kind::S_STATIC: // STATIC
+      case symbol_kind::S_VOID: // VOID
+      case symbol_kind::S_MAIN: // MAIN
+      case symbol_kind::S_PUBLIC: // PUBLIC
+      case symbol_kind::S_PERIOD: // PERIOD
+      case symbol_kind::S_COMMA: // COMMA
+      case symbol_kind::S_EXCLAMATION: // EXCLAMATION
+      case symbol_kind::S_28_SEMI_COLON: // SEMI-COLON
+      case symbol_kind::S_29_INT_TYPE: // INT-TYPE
+      case symbol_kind::S_30_BOOL_TYPE: // BOOL-TYPE
+      case symbol_kind::S_STRING: // STRING
+      case symbol_kind::S_IF: // IF
+      case symbol_kind::S_ELSE: // ELSE
+      case symbol_kind::S_WHILE: // WHILE
+      case symbol_kind::S_NEW: // NEW
+      case symbol_kind::S_LENGTH: // LENGTH
+      case symbol_kind::S_PRINT: // PRINT
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
         value.YY_MOVE_OR_COPY< std::string > (YY_MOVE (that.value));
         break;
 
@@ -231,9 +261,39 @@ namespace yy {
       case symbol_kind::S_PLUSOP: // PLUSOP
       case symbol_kind::S_MINUSOP: // MINUSOP
       case symbol_kind::S_MULTOP: // MULTOP
+      case symbol_kind::S_DIVOP: // DIVOP
       case symbol_kind::S_INT: // INT
       case symbol_kind::S_LP: // LP
       case symbol_kind::S_RP: // RP
+      case symbol_kind::S_LHB: // LHB
+      case symbol_kind::S_RHB: // RHB
+      case symbol_kind::S_LCB: // LCB
+      case symbol_kind::S_RCB: // RCB
+      case symbol_kind::S_ASSIGN: // ASSIGN
+      case symbol_kind::S_EQ: // EQ
+      case symbol_kind::S_AND: // AND
+      case symbol_kind::S_OR: // OR
+      case symbol_kind::S_GT: // GT
+      case symbol_kind::S_LT: // LT
+      case symbol_kind::S_CLASS: // CLASS
+      case symbol_kind::S_STATIC: // STATIC
+      case symbol_kind::S_VOID: // VOID
+      case symbol_kind::S_MAIN: // MAIN
+      case symbol_kind::S_PUBLIC: // PUBLIC
+      case symbol_kind::S_PERIOD: // PERIOD
+      case symbol_kind::S_COMMA: // COMMA
+      case symbol_kind::S_EXCLAMATION: // EXCLAMATION
+      case symbol_kind::S_28_SEMI_COLON: // SEMI-COLON
+      case symbol_kind::S_29_INT_TYPE: // INT-TYPE
+      case symbol_kind::S_30_BOOL_TYPE: // BOOL-TYPE
+      case symbol_kind::S_STRING: // STRING
+      case symbol_kind::S_IF: // IF
+      case symbol_kind::S_ELSE: // ELSE
+      case symbol_kind::S_WHILE: // WHILE
+      case symbol_kind::S_NEW: // NEW
+      case symbol_kind::S_LENGTH: // LENGTH
+      case symbol_kind::S_PRINT: // PRINT
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
         value.move< std::string > (YY_MOVE (that.value));
         break;
 
@@ -261,9 +321,39 @@ namespace yy {
       case symbol_kind::S_PLUSOP: // PLUSOP
       case symbol_kind::S_MINUSOP: // MINUSOP
       case symbol_kind::S_MULTOP: // MULTOP
+      case symbol_kind::S_DIVOP: // DIVOP
       case symbol_kind::S_INT: // INT
       case symbol_kind::S_LP: // LP
       case symbol_kind::S_RP: // RP
+      case symbol_kind::S_LHB: // LHB
+      case symbol_kind::S_RHB: // RHB
+      case symbol_kind::S_LCB: // LCB
+      case symbol_kind::S_RCB: // RCB
+      case symbol_kind::S_ASSIGN: // ASSIGN
+      case symbol_kind::S_EQ: // EQ
+      case symbol_kind::S_AND: // AND
+      case symbol_kind::S_OR: // OR
+      case symbol_kind::S_GT: // GT
+      case symbol_kind::S_LT: // LT
+      case symbol_kind::S_CLASS: // CLASS
+      case symbol_kind::S_STATIC: // STATIC
+      case symbol_kind::S_VOID: // VOID
+      case symbol_kind::S_MAIN: // MAIN
+      case symbol_kind::S_PUBLIC: // PUBLIC
+      case symbol_kind::S_PERIOD: // PERIOD
+      case symbol_kind::S_COMMA: // COMMA
+      case symbol_kind::S_EXCLAMATION: // EXCLAMATION
+      case symbol_kind::S_28_SEMI_COLON: // SEMI-COLON
+      case symbol_kind::S_29_INT_TYPE: // INT-TYPE
+      case symbol_kind::S_30_BOOL_TYPE: // BOOL-TYPE
+      case symbol_kind::S_STRING: // STRING
+      case symbol_kind::S_IF: // IF
+      case symbol_kind::S_ELSE: // ELSE
+      case symbol_kind::S_WHILE: // WHILE
+      case symbol_kind::S_NEW: // NEW
+      case symbol_kind::S_LENGTH: // LENGTH
+      case symbol_kind::S_PRINT: // PRINT
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
         value.copy< std::string > (that.value);
         break;
 
@@ -289,9 +379,39 @@ namespace yy {
       case symbol_kind::S_PLUSOP: // PLUSOP
       case symbol_kind::S_MINUSOP: // MINUSOP
       case symbol_kind::S_MULTOP: // MULTOP
+      case symbol_kind::S_DIVOP: // DIVOP
       case symbol_kind::S_INT: // INT
       case symbol_kind::S_LP: // LP
       case symbol_kind::S_RP: // RP
+      case symbol_kind::S_LHB: // LHB
+      case symbol_kind::S_RHB: // RHB
+      case symbol_kind::S_LCB: // LCB
+      case symbol_kind::S_RCB: // RCB
+      case symbol_kind::S_ASSIGN: // ASSIGN
+      case symbol_kind::S_EQ: // EQ
+      case symbol_kind::S_AND: // AND
+      case symbol_kind::S_OR: // OR
+      case symbol_kind::S_GT: // GT
+      case symbol_kind::S_LT: // LT
+      case symbol_kind::S_CLASS: // CLASS
+      case symbol_kind::S_STATIC: // STATIC
+      case symbol_kind::S_VOID: // VOID
+      case symbol_kind::S_MAIN: // MAIN
+      case symbol_kind::S_PUBLIC: // PUBLIC
+      case symbol_kind::S_PERIOD: // PERIOD
+      case symbol_kind::S_COMMA: // COMMA
+      case symbol_kind::S_EXCLAMATION: // EXCLAMATION
+      case symbol_kind::S_28_SEMI_COLON: // SEMI-COLON
+      case symbol_kind::S_29_INT_TYPE: // INT-TYPE
+      case symbol_kind::S_30_BOOL_TYPE: // BOOL-TYPE
+      case symbol_kind::S_STRING: // STRING
+      case symbol_kind::S_IF: // IF
+      case symbol_kind::S_ELSE: // ELSE
+      case symbol_kind::S_WHILE: // WHILE
+      case symbol_kind::S_NEW: // NEW
+      case symbol_kind::S_LENGTH: // LENGTH
+      case symbol_kind::S_PRINT: // PRINT
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
         value.move< std::string > (that.value);
         break;
 
@@ -558,9 +678,39 @@ namespace yy {
       case symbol_kind::S_PLUSOP: // PLUSOP
       case symbol_kind::S_MINUSOP: // MINUSOP
       case symbol_kind::S_MULTOP: // MULTOP
+      case symbol_kind::S_DIVOP: // DIVOP
       case symbol_kind::S_INT: // INT
       case symbol_kind::S_LP: // LP
       case symbol_kind::S_RP: // RP
+      case symbol_kind::S_LHB: // LHB
+      case symbol_kind::S_RHB: // RHB
+      case symbol_kind::S_LCB: // LCB
+      case symbol_kind::S_RCB: // RCB
+      case symbol_kind::S_ASSIGN: // ASSIGN
+      case symbol_kind::S_EQ: // EQ
+      case symbol_kind::S_AND: // AND
+      case symbol_kind::S_OR: // OR
+      case symbol_kind::S_GT: // GT
+      case symbol_kind::S_LT: // LT
+      case symbol_kind::S_CLASS: // CLASS
+      case symbol_kind::S_STATIC: // STATIC
+      case symbol_kind::S_VOID: // VOID
+      case symbol_kind::S_MAIN: // MAIN
+      case symbol_kind::S_PUBLIC: // PUBLIC
+      case symbol_kind::S_PERIOD: // PERIOD
+      case symbol_kind::S_COMMA: // COMMA
+      case symbol_kind::S_EXCLAMATION: // EXCLAMATION
+      case symbol_kind::S_28_SEMI_COLON: // SEMI-COLON
+      case symbol_kind::S_29_INT_TYPE: // INT-TYPE
+      case symbol_kind::S_30_BOOL_TYPE: // BOOL-TYPE
+      case symbol_kind::S_STRING: // STRING
+      case symbol_kind::S_IF: // IF
+      case symbol_kind::S_ELSE: // ELSE
+      case symbol_kind::S_WHILE: // WHILE
+      case symbol_kind::S_NEW: // NEW
+      case symbol_kind::S_LENGTH: // LENGTH
+      case symbol_kind::S_PRINT: // PRINT
+      case symbol_kind::S_IDENTIFIER: // IDENTIFIER
         yylhs.value.emplace< std::string > ();
         break;
 
@@ -579,13 +729,13 @@ namespace yy {
           switch (yyn)
             {
   case 2: // root: expression
-#line 32 "parser.yy"
+#line 35 "parser.yy"
                        {root = yystack_[0].value.as < Node * > ();}
-#line 585 "parser.tab.cc"
+#line 735 "parser.tab.cc"
     break;
 
   case 3: // expression: expression PLUSOP expression
-#line 34 "parser.yy"
+#line 37 "parser.yy"
                                          {      /*
                                                   Create a subtree that corresponds to the AddExpression
                                                   The root of the subtree is AddExpression
@@ -596,51 +746,51 @@ namespace yy {
                             yylhs.value.as < Node * > ()->children.push_back(yystack_[0].value.as < Node * > ());
                             /* printf("r1 "); */
                           }
-#line 600 "parser.tab.cc"
+#line 750 "parser.tab.cc"
     break;
 
   case 4: // expression: expression MINUSOP expression
-#line 44 "parser.yy"
+#line 47 "parser.yy"
                                             {
                             yylhs.value.as < Node * > () = new Node("SubExpression", "", yylineno);
                             yylhs.value.as < Node * > ()->children.push_back(yystack_[2].value.as < Node * > ());
                             yylhs.value.as < Node * > ()->children.push_back(yystack_[0].value.as < Node * > ());
                             /* printf("r2 "); */
                           }
-#line 611 "parser.tab.cc"
+#line 761 "parser.tab.cc"
     break;
 
   case 5: // expression: expression MULTOP expression
-#line 50 "parser.yy"
+#line 53 "parser.yy"
                                            {
                             yylhs.value.as < Node * > () = new Node("MultExpression", "", yylineno);
                             yylhs.value.as < Node * > ()->children.push_back(yystack_[2].value.as < Node * > ());
                             yylhs.value.as < Node * > ()->children.push_back(yystack_[0].value.as < Node * > ());
                             /* printf("r3 "); */
                           }
-#line 622 "parser.tab.cc"
+#line 772 "parser.tab.cc"
     break;
 
   case 6: // expression: factor
-#line 56 "parser.yy"
+#line 59 "parser.yy"
                           {yylhs.value.as < Node * > () = yystack_[0].value.as < Node * > (); /* printf("r4 ");*/}
-#line 628 "parser.tab.cc"
+#line 778 "parser.tab.cc"
     break;
 
   case 7: // factor: INT
-#line 59 "parser.yy"
+#line 62 "parser.yy"
                           {  yylhs.value.as < Node * > () = new Node("Int", yystack_[0].value.as < std::string > (), yylineno); /* printf("r5 ");  Here we create a leaf node Int. The value of the leaf node is $1 */}
-#line 634 "parser.tab.cc"
+#line 784 "parser.tab.cc"
     break;
 
   case 8: // factor: LP expression RP
-#line 60 "parser.yy"
+#line 63 "parser.yy"
                                { yylhs.value.as < Node * > () = yystack_[1].value.as < Node * > (); /* printf("r6 ");  simply return the expression */}
-#line 640 "parser.tab.cc"
+#line 790 "parser.tab.cc"
     break;
 
 
-#line 644 "parser.tab.cc"
+#line 794 "parser.tab.cc"
 
             default:
               break;
@@ -988,15 +1138,15 @@ namespace yy {
   }
 
 
-  const signed char parser::yypact_ninf_ = -3;
+  const signed char parser::yypact_ninf_ = -7;
 
   const signed char parser::yytable_ninf_ = -1;
 
   const signed char
   parser::yypact_[] =
   {
-       9,    -3,     9,     1,    -1,    -3,     6,    -3,     9,     9,
-       9,    -3,     0,     0,    -3
+      -6,    -7,    -6,    13,     7,    -7,     0,    -7,    -6,    -6,
+      -6,    -7,     9,     9,    -7
   };
 
   const signed char
@@ -1009,7 +1159,7 @@ namespace yy {
   const signed char
   parser::yypgoto_[] =
   {
-      -3,    -3,    -2,    -3
+      -7,    -7,    -2,    -7
   };
 
   const signed char
@@ -1021,28 +1171,28 @@ namespace yy {
   const signed char
   parser::yytable_[] =
   {
-       6,     7,     8,     9,    10,    10,    12,    13,    14,     8,
-       9,    10,     0,     0,    11,     1,     2
+       6,     1,     2,     8,     9,    10,    12,    13,    14,    11,
+       8,     9,    10,     7,    10
   };
 
   const signed char
   parser::yycheck_[] =
   {
-       2,     0,     3,     4,     5,     5,     8,     9,    10,     3,
-       4,     5,    -1,    -1,     8,     6,     7
+       2,     7,     8,     3,     4,     5,     8,     9,    10,     9,
+       3,     4,     5,     0,     5
   };
 
   const signed char
   parser::yystos_[] =
   {
-       0,     6,     7,    10,    11,    12,    11,     0,     3,     4,
-       5,     8,    11,    11,    11
+       0,     7,     8,    40,    41,    42,    41,     0,     3,     4,
+       5,     9,    41,    41,    41
   };
 
   const signed char
   parser::yyr1_[] =
   {
-       0,     9,    10,    11,    11,    11,    11,    12,    12
+       0,    39,    40,    41,    41,    41,    41,    42,    42
   };
 
   const signed char
@@ -1059,7 +1209,12 @@ namespace yy {
   const parser::yytname_[] =
   {
   "\"end of file\"", "error", "\"invalid token\"", "PLUSOP", "MINUSOP",
-  "MULTOP", "INT", "LP", "RP", "$accept", "root", "expression", "factor", YY_NULLPTR
+  "MULTOP", "DIVOP", "INT", "LP", "RP", "LHB", "RHB", "LCB", "RCB",
+  "ASSIGN", "EQ", "AND", "OR", "GT", "LT", "CLASS", "STATIC", "VOID",
+  "MAIN", "PUBLIC", "PERIOD", "COMMA", "EXCLAMATION", "SEMI-COLON",
+  "INT-TYPE", "BOOL-TYPE", "STRING", "IF", "ELSE", "WHILE", "NEW",
+  "LENGTH", "PRINT", "IDENTIFIER", "$accept", "root", "expression",
+  "factor", YY_NULLPTR
   };
 #endif
 
@@ -1068,7 +1223,7 @@ namespace yy {
   const signed char
   parser::yyrline_[] =
   {
-       0,    32,    32,    34,    44,    50,    56,    59,    60
+       0,    35,    35,    37,    47,    53,    59,    62,    63
   };
 
   void
@@ -1100,5 +1255,5 @@ namespace yy {
 
 
 } // yy
-#line 1104 "parser.tab.cc"
+#line 1259 "parser.tab.cc"
 
