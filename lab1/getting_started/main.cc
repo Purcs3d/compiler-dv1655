@@ -5,6 +5,7 @@ extern Node* root;
 extern FILE* yyin;
 extern int yylineno;
 extern int lexical_errors;
+extern yy::parser::symbol_type yylex();
 
 void yy::parser::error(std::string const&err)
 { 
@@ -21,17 +22,17 @@ int main(int argc, char **argv)
       return 1;
     }
   }
+yylex();
+  // yy::parser parser;
 
-  yy::parser parser;
+  // if(!parser.parse() && !lexical_errors) {
 
-  if(!parser.parse() && !lexical_errors) {
+  //   printf("\nThe compiler successfuly generated a syntax tree for the given input! \n");
 
-    printf("\nThe compiler successfuly generated a syntax tree for the given input! \n");
-
-    printf("\nPrint Tree:  \n");
-    root->print_tree();
-    root->generate_tree();
-  }
+  //   printf("\nPrint Tree:  \n");
+  //   root->print_tree();
+  //   root->generate_tree();
+  // }
   
   return 0;
 }
